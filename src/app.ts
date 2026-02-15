@@ -23,17 +23,18 @@ const PORT = process.env.PORT || 8001
 // Middlewares
 app.use(cors({
   origin: [
+     'https://emy-by.vercel.app',
     'http://localhost:3000', 
     'http://localhost:3001',
     'http://localhost:3002',
     'http://localhost:3003',
     'http://localhost:3004',
-    'https://emy-by.vercel.app',
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }))
+https://emy-by.vercel.app/login
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
