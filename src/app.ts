@@ -34,7 +34,6 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }))
-https://emy-by.vercel.app/login
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
